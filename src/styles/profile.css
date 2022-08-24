@@ -1,0 +1,72 @@
+.container-profile {
+    
+    margin: 100px 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-config {
+    margin-top: -160px;
+}
+
+.box-list {
+    
+    margin-top: 30px;
+}
+
+.profile-text  h1{
+    margin-left: 8px;
+}
+.list-movies {
+    
+   
+    display: flex;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    
+}
+.movies {
+    height: 260px;
+}
+.movies  img{ 
+    
+    width: 180px; 
+    height: 220px;
+  
+    transform: scale(0.9);
+}
+.movies  img:hover {
+    transform: scale(0.95);
+    
+}
+.delete {
+    display: flex;
+    
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 100%;
+    
+}
+.delete > button{
+    background-color:#f74535;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.delete > button:hover {
+    background-color: #ed5b5b
+}
+@media (max-width: 500px) {
+    .profile-text  h1{
+       margin-left: 44px;
+    }
+    .list-movies {
+        margin-left: 37px;
+    }
+} 

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500&family=Roboto:wght@400;700&family=Varela+Round&display=swap');
+
+
+
+
+body {
+    font-family: 'Roboto'
+}
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.black {
+    background: #141414;
+}
+
+
+.header-left {
+    width: 33%;
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+
+.header-left .header-burger a{
+    transition: all ease 0.2s;
+    font-size: 25px;
+    font-weight: 100;
+    
+    
+}
+.header-left .header-burger a:hover {
+    color: white;
+}
+
+.header-left a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #C2BFC3;
+    font-size: 17px;
+    padding: 12px;
+    text-align: center;
+    transition: all ease 0.2s;
+}
+.header-left a:hover {
+    color: white;
+}
+
+.header-center {
+    display: flex;
+    width: 28%;
+    align-items: center;
+}
+
+.header-logo a{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 66px;
+    text-decoration: none;
+    color: white;
+}
+.header-logo img{
+    margin: 12px;
+    width: 148px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+
+}
+
+.header-right a{
+    
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #C2BFC3;
+    padding: 15px;
+    transition: all ease 0.2s;
+}
+
+.header-right a:hover {
+    color: white;
+}
+
+.header-right .header-entrar button{
+    margin-right: 13px;
+}
+.header-right .header-entrar button{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    
+}
+.header-right .header-entrar button:hover{
+    color: rgba(255, 255, 255, 0.7);;
+
+}
+
+
+.header-right .header-button a {
+    display: flex;
+   
+    font-weight: bold;
+    height: 0px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.12);
+    transition: all ease 0.3s;
+    cursor: pointer;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.header-right .header-button svg{
+    margin-right: 10px; 
+
+}
+
+
+
+.header-right .header-button a:hover {
+    background-color:white;
+    color: black;
+}
+
+.input-search form {
+    height: 70px;
+    margin-left: 64px;
+    
+   
+}
+.input-search > form > input {
+    font-size: 20px;
+    padding-left: 48px;
+    width: 1310px;
+    text-align: start;
+    height: 70px;
+    border: none;
+    background-color: #1B1C28;
+    color: rgb(255, 255, 255);
+
+}
+.input-search > form > input::placeholder {
+    color: rgb(176, 176, 176);
+}
+.input-search > form > input:focus {
+    outline: none;
+}
+#lupa-search {
+    position: absolute;
+    font-size: 25px;
+    left: 80px;
+    top: 102px
+}
+#lupa-search input::-ms-clear{
+    font-size: 30px;
+    color: white;
+    background-color: red;
+}
+
+
+.header-search #button-search {
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+    cursor: pointer;
+}
+.header-search #button-search:hover {
+    color:white;
+}
+
+.header-logo #label {
+    font-weight: 600;
+    font-size: 23px;
+    position: absolute;
+    top: 65px;
+    left: 686px;
+    letter-spacing: 1px;
+    
+}
+
+
+
+.bm-burger-button {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    margin-left: -50px;
+    top: 27px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+   
+    background: #151515;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    
+    position: fixed;
+    left: 58px;
+    margin-top: 27px;
+    height: 24px;
+    width: 24px;
+    
+  }
+  
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    
+    background: #bdc3c7;
+    position: fixed;  
+    margin-top: 0px;
+  }
+  
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+  }
+  
+  
+  /* General sidebar styles */
+  .bm-menu {
+    
+    background: #151515;
+    
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    padding: 3em 2.2em 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 285px;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    
+    width: 400px;
+    padding: 0.8em;
+    
+  }
+  
+  /* Individual item */
+  .bm-item {
+    
+    display: inline-block;
+    margin: 15px 0px
+  }
+  
+  /* Styling of overlay */
+  
+
+
+
+
+
+@media (max-width: 550px) {
+    .bm-menu {
+        padding: 30px 5px;
+        background-color: black;
+    }
+    .bm-menu-wrap {
+        top: -25px;
+        left: -30px;
+    }
+}
+
+  @media (max-width: 728px ) {
+    .header-button span{
+        display: none;
+        
+    }
+    .header-button a {
+        background: none;
+    }
+    
+}
+
+@media (max-width: 690px) {
+   
+    .header-entrar, 
+    .header-series,
+    .header-filmes  {
+        display: none;
+    }
+    .header-logo img{
+        
+        width: 120px;
+    }
+    .header-right{
+        width: 30%;
+    }
+   
+}
+@media (max-width: 666px) {
+    .header-center {
+        margin-right: 100px;
+    }
+    
+   
+}
+@media (max-width: 601px) {
+    
+    
+}
+@media (max-width: 480px) {
+    .header-right {
+        position: absolute;
+        right: 0;
+    }
+    .header-center {
+        
+       margin-right: 190px;
+    }
+}

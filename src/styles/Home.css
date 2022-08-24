@@ -1,0 +1,14 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://play.hbomax.com/default-3840x2160.png);
+  color: white;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}

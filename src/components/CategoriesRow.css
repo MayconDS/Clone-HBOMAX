@@ -1,0 +1,37 @@
+.row {
+    overflow: hidden;
+    height: 127px;
+    position: relative;
+}
+
+#ul {
+    margin: 80px;
+    width: 3200px;
+    display: flex;
+    list-style: none;
+    overflow: hidden;  
+    margin-left: 30px;
+}
+#ul li {
+    padding: 1px 20px;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    border: 1px solid rgb(60, 60, 60);
+    height: 30px;
+    padding-top: 3.3px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+#ul li:hover {
+    border: 2px solid rgb(104, 0, 250);
+}
+#ul li button {
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,35 @@
+footer {
+    padding-top: 170px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0 54.2px
+}
+.socials a{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.socials a, .copyright{
+    color: rgba(255, 255, 255, 0.7);
+}
+.copyright {
+    margin-bottom: 25px;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+   .container p {
+    font-size: 12px;
+   }
+   .socials {
+    margin-bottom: 15px;
+   }
+}

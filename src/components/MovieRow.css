@@ -1,0 +1,103 @@
+
+.movieRow {
+    margin-top: 25px;
+    
+    
+}
+.movieRow h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 56px;
+}
+.movieRow p{
+    color: #C2BFC3;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 56px;
+}
+.title span {
+    color: #C2BFC3;
+    font-weight: bold;
+}
+.movieRow-list {
+    transition: all ease 0.5s;
+}
+.movieRow-listarea {
+    overflow-x: hidden;
+    padding-left: 40px;
+    
+}
+.refers {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.refers > a {
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.refers > a:hover {
+    color: rgba(255,255,255,0.6)
+
+}
+
+    
+.movieRow-item {
+    
+    padding-left: 16px;
+    width: 223px;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.movieRow-item img {
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.movieRow-item img:hover {
+    border: 3px solid rgb(83, 21, 170);
+    padding: 2px;
+    border-radius: 4px
+}
+
+.movieRow-left, .movieRow-right {
+    
+    position: absolute;
+    width: 40px;
+    height: 311px;
+    background-color: rgba(0,0,0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.movieRow-left {
+    left: 0;
+
+}
+.movieRow-right {
+    right: 0;
+}
+
+.movieRow:hover .movieRow-left,
+.movieRow:hover .movieRow-right {
+    opacity: 1;
+}
+
+
+@media (max-width: 760px) {
+    .movieRow-left,
+    .movieRow-right {
+        opacity: 1;
+    }
+}
