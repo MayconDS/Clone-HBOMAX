@@ -6,7 +6,7 @@ import Home from "../pages/Home";
 import Search from "../pages/search";
 import Movies from "../pages/movies";
 import Login from "../pages/login";
-import Register from "../pages/register";
+import Register from "../pages/Register";
 import PrivateRouter from "./PrivateRoutes";
 import MovieInfo from "../pages/movieInfo";
 import Profile from "../pages/profile";
