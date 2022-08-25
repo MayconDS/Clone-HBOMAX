@@ -8,7 +8,7 @@ import Movies from "../pages/movies";
 import Login from "../pages/login";
 import Register from "../pages/Register";
 import PrivateRouter from "./PrivateRoutes";
-import MovieInfo from "../pages/movieInfo";
+import MovieInfo from "../pages/MovieInfo";
 import Profile from "../pages/profile";
 
 const Routering = () => {
