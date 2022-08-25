@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Series from "../pages/Series";
+import Series from "../pages/series";
 import Home from "../pages/Home";
 import Search from "../pages/Search";
 import Movies from "../pages/Movies";
