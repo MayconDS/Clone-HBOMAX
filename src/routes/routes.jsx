@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Series from "../pages/series";
-import Home from "../pages/Home";
+import Home from "../pages/home";
 import Search from "../pages/search";
-import Movies from "../pages/Movies";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
+import Movies from "../pages/movies";
+import Login from "../pages/login";
+import Register from "../pages/register";
 import PrivateRouter from "./PrivateRoutes";
-import MovieInfo from "../pages/MovieInfo";
-import Profile from "../pages/Profile";
+import MovieInfo from "../pages/movieInfo";
+import Profile from "../pages/profile";
 
 const Routering = () => {
   return (
