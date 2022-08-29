@@ -2,8 +2,8 @@ const VITE_API_KEY = "0d0a0a2eaca06b1d8d0b66cb7be22c3c";
 const VITE_API_BASE = "https://api.themoviedb.org/3";
 const VITE_API_MOVIE = "https://api.themoviedb.org/3/movie/";
 const VITE_API_TV = "https://api.themoviedb.org/3/tv/";
-const VITE_SEARCH_MOVIE_URL = "http://api.themoviedb.org/3/search/movie";
-const VITE_SEARCH_TV_URL = "http://api.themoviedb.org/3/search/tv";
+const VITE_SEARCH_MOVIE_URL = "https://api.themoviedb.org/3/search/movie";
+const VITE_SEARCH_TV_URL = "https://api.themoviedb.org/3/search/tv";
 
 // Requisição da URL themoviedb //
 

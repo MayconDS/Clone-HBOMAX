@@ -92,6 +92,8 @@ export default ({ title, buttonLog, searchInput }) => {
               <div className="menu-item">
                 <Link to="/">Aproveite grátis</Link>
               </div>
+              <br />
+              <br />
             </Menu>
             {/* End Menu de burger */}
           </div>

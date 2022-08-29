@@ -1,5 +1,4 @@
 import React, { Fragment, useState, useEffect } from "react";
-
 import "../styles/profileEdit.css";
 import UsersService from "../services/users";
 
@@ -10,8 +9,13 @@ const ProfileEdit = () => {
   const [sucess, setSucess] = useState(false);
   const [error, setError] = useState(false);
 
+  const logOut = async () => {
+    await UsersService.logout();
+    setRedirectToLogin(true);
+  };
+
   const initializeUser = async () => {
-    const user = await JSON.parse(sessionStorage.getItem("user"));
+    const user = await JSON.parse(localStorage.getItem("user"));
     setName(user["name"]);
     setEmail(user["email"]);
   };
@@ -36,7 +40,7 @@ const ProfileEdit = () => {
 
   return (
     <Fragment>
-      <form onSubmit={handleSubmit}>
+      <form>
         <div className="container-profile-edit">
           {sucess ? (
             <h1>ATUALIZADO COM SUCESSO, RECARREGE A PÁGINA</h1>
@@ -62,7 +66,14 @@ const ProfileEdit = () => {
             value={email || ""}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <button>Salvar</button>
+          <div className="profile-edit-buttons">
+            <button id="save" onClick={handleSubmit}>
+              Salvar
+            </button>
+            <button id="logout" onClick={logOut}>
+              Sair
+            </button>
+          </div>
         </div>
       </form>
     </Fragment>

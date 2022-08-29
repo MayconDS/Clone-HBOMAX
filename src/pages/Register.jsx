@@ -28,7 +28,7 @@ const Register = () => {
   if (redirectToLogin) return <Navigate to="/login" />;
 
   return (
-    <Fragment>
+    <div className="page-register">
       <Navbar title={"Entrar"} buttonLog={"Entrar"} />
       <form onSubmit={HandleSubmit}>
         <div className="container-form-register">
@@ -72,12 +72,11 @@ const Register = () => {
           </div>
         </div>
       </form>
-
       <div className="register-text-help">
         {" "}
         <a href="/">Precisa de ajuda para entrar?</a>
       </div>
-    </Fragment>
+    </div>
   );
 };
 export default Register;

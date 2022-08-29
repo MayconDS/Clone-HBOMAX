@@ -62,6 +62,7 @@ const MovieInfo = () => {
     <Fragment>
       <Navbar />
       <section>
+        <span>ALGUMAS SERIES OU FILMES PODEM NÃO APARECER CORRETAMENTE!!</span>
         <div className="movie-container">
           {movie && (
             <>
@@ -141,7 +142,11 @@ const MovieInfo = () => {
                     {" "}
                     <BsFillFileEarmarkTextFill /> Descrição
                   </h3>
-                  <p>{movie.overview ? movie.overview : tv.overview}</p>
+                  {movie.overview ? (
+                    <p>{movie.overview ? movie.overview : tv.overview}</p>
+                  ) : (
+                    "Sem overview"
+                  )}
                 </div>
               </div>
             </>

@@ -1,9 +1,12 @@
 section {
     height: 100vh;
-    width: 100%;
-    
-    
-    
+    width: 100%; 
+}
+section > span {
+    color: rgb(255, 0, 0);
+  position: relative;
+   top: 70px;
+   left: 50px;
 }
 .movie-container {
     width: 100%;

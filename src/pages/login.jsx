@@ -29,7 +29,7 @@ const Login = () => {
   if (redirectToHome) return <Navigate to="/" />;
 
   return (
-    <Fragment>
+    <div className="page-login">
       <Navbar title={"Entrar"} buttonLog={"Entrar"} />
       <form onSubmit={HandleSubmit}>
         <div className="container-form-login">
@@ -72,7 +72,7 @@ const Login = () => {
         {" "}
         <a href="/">Precisa de ajuda para entrar?</a>
       </div>
-    </Fragment>
+    </div>
   );
 };
 export default Login;
