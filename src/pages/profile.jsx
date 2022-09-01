@@ -8,13 +8,15 @@ import "../styles/profile.css";
 
 const Profile = () => {
   // Armazena filmes/series adicionados como favoritos do localStorage
-  const [moviesFav, setMoviesFav] = useState([]);
+  const [moviesFav, setMoviesFav] = useState(
+    JSON.parse(localStorage.getItem("todos"))
+  );
 
   // Função para remover o filme/serie do localStorage
   const removeMovie = (id) => {
     let newArray = moviesFav.filter((item) => item.id != id.target.value);
     localStorage.setItem("movies", JSON.stringify(newArray));
-    console.log(newArray);
+    setMoviesFav(newArray);
   };
 
   useEffect(() => {
