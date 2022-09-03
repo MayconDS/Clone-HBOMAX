@@ -10,4 +10,5 @@ DEMO: https://hbomax.vercel.app/
 !!! Recomendo remover tudo que esteja conectando com o Banco de Dados !!!
 
 npm install, to install dependencies
+<br/>
 npm run dev, run application
